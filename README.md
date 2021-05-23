@@ -285,6 +285,26 @@ Get all open orders for a symbol, or all symbols. Careful when accessing this wi
 
 Retrieve all orders on an account, whether active, cancelled, or filled.
 
+### **[newOCO(query _object_, [callback _function_])](https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md#new-oco-trade)**
+
+Places a new OCO(One-Cancels-the-Other) order.
+
+### **[cancelOCO(query _object_, [callback _function_])](https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md#cancel-oco-trade)**
+
+Cancels an OCO order which includes both STOP_LOSS_LIMIT and LIMIT_MAKER type order on the basis of orderListId. Canceling an individual leg will cancel the entire OCO.
+
+### **[queryOCO(query _object_, [callback _function_])](https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md#query-oco-user_data)**
+
+Retrieves a specific OCO order based on provided optional parameters.
+
+### **[queryAllOCO(query _object_, [callback _function_])](https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md#query-all-oco-user_data)**
+
+Retrieves all OCO orders based on provided optional parameters.
+
+### **[queryOpenOCO(query _object_, [callback _function_])](https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md#query-open-oco-user_data)**
+
+Retrieves Open OCO orders.
+
 ### **[account([callback _function_])](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md#account-information-user_data)**
 
 Retrieve current account information including commision rates, trading permissions, and free/locked balances.
